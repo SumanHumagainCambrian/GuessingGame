@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace GuessingGame
 {
-    internal class Guess
+    public class Guess
     {
+        public int UserGuess { get; } //readonly property
+        public DateTime GuessTime { get; } //readonly property
+
+        //Constructor
+        public Guess(int userGuess)
+        {
+            UserGuess = userGuess;  
+            GuessTime = DateTime.Now; 
+        }
+
     }
 }
