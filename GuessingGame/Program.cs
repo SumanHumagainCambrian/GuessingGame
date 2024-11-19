@@ -22,5 +22,14 @@ do
         continue;
     }
 
+    if (userGuess > randomInt)
+    {
+        Console.WriteLine("Your guess is found high!");
+    }
+    else if (userGuess < randomInt)
+    {
+        Console.WriteLine("Your guess is found low!");
+    }
+
 }
 while (userGuess != randomInt);
