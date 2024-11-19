@@ -1,6 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using GuessingGame;
 
+Console.WriteLine("Welcome to Guessing game! \n");
+
 Random random = new Random();
 int randomInt = random.Next(1, 101);
 
