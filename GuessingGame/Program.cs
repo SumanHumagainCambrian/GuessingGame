@@ -16,12 +16,13 @@ do
     Console.Write("Enter your guess: ");
     string userInput = Console.ReadLine();
 
-    guessList.Add(new Guess(userGuess));
     if (!int.TryParse(userInput, out userGuess))
     {
         Console.WriteLine("Invalid input. Please enter a valid integer.");
         continue;
     }
+
+    guessList.Add(new Guess(userGuess)); // If its number then only adding to guess list
 
     if (userGuess > randomInt)
     {
