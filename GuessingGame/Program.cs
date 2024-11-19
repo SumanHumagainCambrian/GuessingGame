@@ -1,7 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using GuessingGame;
 
-
 Random random = new Random();
 int randomInt = random.Next(1, 101);
 
@@ -40,3 +39,4 @@ while (userGuess != randomInt);
 
 //If matched 
 Console.WriteLine($"You Won! The answer was {randomInt}.");
+Console.ReadLine();
